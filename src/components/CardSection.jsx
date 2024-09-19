@@ -1,4 +1,5 @@
 import './style.css'
+import { Link } from 'react-router-dom'
 import Supervisor from '../assets/images/icon-supervisor.svg'
 import TeamBuilder from '../assets/images/icon-team-builder.svg'
 import Karma from '../assets/images/icon-karma.svg'
@@ -47,6 +48,14 @@ const CardSection = () => {
            </div>
 
         </div>
+           
+           <div className='attribution'>
+              Challenge by{" "}
+              <Link to="https://www.frontendmentor.io?ref=challenge" target='_blank'>Frontend Mentor</Link>
+              .Coded by 
+              <Link to="https://github.com/jaysonalfie">Jayson Alfie</Link>
+           </div>
+
      </main>
     </>
   )
