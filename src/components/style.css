@@ -1,7 +1,85 @@
 /*style.css*/
+/*Breaking Points
+375px, 600px, 1440px, 1200px, 900px*/
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Primary colors*/
+  --red-color: hsl(0, 78%, 62%);
+  --cyan-color: hsl(180, 62%, 55%);
+  --orange-color: hsl(34, 97%, 64%);
+  --blue-color: hsl(212, 86%, 64%);
+
+  /*Neutral colors*/
+  --very-Dark-Blue: hsl(234, 12%, 34%);
+  --grayish-Blue: hsl(229, 6%, 66%);
+  --very-Light-Gary: hsl(0, 0%, 98%);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: var(--very-Light-Gary);
+}
+
+h1 {
+  color: var(--very-Dark-Blue);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+p {
+  color: var(--grayish-Blue);
+  font-weight: 400;
+}
+
+/*Reusables*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /*Cards*/
+
+.card__supervisor{
+    padding:2.5rem 3rem;
+    border:3px solid red;
+    border-radius: 0.6rem;
+}
+header {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+header .header__title{
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
