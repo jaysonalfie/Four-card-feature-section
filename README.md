@@ -21,7 +21,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device;s screen size
+- View the optimal layout for the site depending on their devices screen size
 
 
 ### Screenshot
@@ -32,7 +32,7 @@ Users should be able to:
 ![](./mobile2.PNG)
 ![](./mobile3.PNG)
 
-### links
+### Links
 - Solution URL : [https://github.com/jaysonalfie/Four-card-feature-section.git](https://github.com/jaysonalfie/Four-card-feature-section.git)
 - Live Site URL : [https://four-card-feature-section-two-lake.vercel.app/](https://four-card-feature-section-two-lake.vercel.app/)
 
@@ -42,7 +42,7 @@ I was able to use React together with Vite to create the webpage and it was also
 
 ### Built with
 - Semantic HTML5 markup
-- Css custom properties
+- CSS custom properties
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vitejs.dev/) - Code bundler
 
