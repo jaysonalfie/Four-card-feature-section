@@ -8,11 +8,11 @@ import Calculator from "../assets/images/icon-calculator.svg";
 const CardSection = () => {
   return (
     <>
-      <body>
+      <div className="body">
        <div className="container">
        <header>
           <h1 className="header__title">Reliable, efficient delivery</h1>
-          <h1>Powered by Technology</h1>
+          <h1 className="header__subtitle">Powered by Technology</h1>
           <p>
             {" "}
             Our Artificial Intelligence powered tools use millions of project
@@ -71,7 +71,7 @@ const CardSection = () => {
             <Link to="https://github.com/jaysonalfie">Jayson Alfie</Link>
           </div>
         </main>
-      </body>
+      </div>
     </>
   );
 };

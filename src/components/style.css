@@ -21,7 +21,7 @@
   --very-Light-Gary: hsl(0, 0%, 98%);
 }
 
-body {
+.body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -57,21 +57,6 @@ p {
   /*Cards*/
 /*Box shadows values
 1- horixontal offset, 2-vertical offset, 3-blur radius, 4- spread radius, 5-shadow color*/
-.card__supervisor{
-    margin-bottom: 3rem;
-    padding:2.5rem 3rem;
-    /* border:3px solid red; */
-    border-radius: 0.6rem;
-    box-shadow: 0 1rem 1.9rem .5rem #dedede;
-    border-top:.4rem solid var(--cyan-color);
-}
-
-.card__img{
-  display: flex;
-  justify-content: right;
-  padding-top:2.5rem;
-}
-
 header {
   padding: 6rem 0;
   text-align: center;
@@ -82,10 +67,56 @@ header .header__title{
     letter-spacing: 0.05rem;
 }
 
+.card__supervisor{
+  margin-bottom: 3rem;
+  padding:2.5rem 3rem;
+  /* border:3px solid red; */
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 1.9rem .5rem #dedede;
+  border-top:.5rem solid var(--cyan-color);
+ 
+ 
+}
+
+.card__img{
+  display: flex;
+  justify-content: right;
+  padding-top:2.5rem;
+  }
+
+.card__teamBuilder{
+  margin-bottom: 3rem;
+  padding: 2.4rem 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 1.9rem .5rem #dedede;
+  border-top: .5rem solid var(--red-color);
+ 
+}
+
+.card__karma{
+  margin-bottom: 3rem;
+  padding:2.5rem 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 1.9rem .5rem #dedede;
+  border-top: .5rem solid var(--orange-color);
+
+}
+
+.card__calculator{
+  margin-bottom: 3rem;
+  padding: 2.5rem 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 1.9rem .5rem #dedede;
+  border-top: .5rem solid var(--blue-color);
+ 
+}
 
 
 
+.cards{
 
+ 
+}
 
 .attribution {
   font-size: 11px;
@@ -93,4 +124,62 @@ header .header__title{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*Media queries*/
+@media only screen and (min-width:600px){
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+}
+
+
+
+
+@media only screen and (min-width:1200px){
+
+  /*
+-Grid areas defines  how the grid items  will be laid out by naming the different ares of the grid
+-first row has three sections
+-second row has three sections
+-Grid template rows defines the height of each row in the grid
+-Grid template columns  defines the width of each column in the grid
+*/
+.header__title{
+  font-size: 2.1rem;
+}
+
+.header__subtitle{
+  font-size: 2.1rem;
+}
+  .cards {
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+       "start mid1 end"
+       "start mid2 end";
+  }
+
+  .card__supervisor{
+     /*shows the position of the element within the grid container*/
+    grid-area: start;
+    align-self: center;
+  }
+
+  .card__teamBuilder{
+    grid-area: mid1;
+  }
+
+  .card__karma{
+    grid-area: mid2;
+  }
+
+  .card__calculator{
+    grid-area: end;
+    align-self: center;
+  }
 }
